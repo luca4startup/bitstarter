@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   // response.send('Hello World 2!');
   var buf = new Buffer (1024) ; // confirm size 
-  buf = fs.readFileSync ('index.html') ;
+  buf = fs.readFileSync ('index-hw4.html') ;
   response.send(buf.toString()) ;
 });
 
